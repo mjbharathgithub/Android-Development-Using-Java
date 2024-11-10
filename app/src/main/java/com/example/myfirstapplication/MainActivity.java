@@ -2,8 +2,10 @@ package com.example.myfirstapplication;
 
 import android.graphics.Color;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -40,5 +42,12 @@ public class MainActivity extends AppCompatActivity {
         button1.setText("Button1disabled");
         button1.setBackgroundColor(Color.parseColor("#1A1A1D"));
         button1.setTextColor(Color.parseColor("#FAF6E3"));
+    }
+
+    public void insertText(View v){
+        String input = ((TextView)(findViewById(R.id.textOne))).getText().toString();
+        //Note We can also use EditText class for more specific operations
+        Log.d("textMsg","Your message Joseph : "+input);
+        ((TextView) findViewById(R.id.textTwo)).setText(input);
     }
 }
