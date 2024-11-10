@@ -14,26 +14,27 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.237" />
 
     <EditText
         android:id="@+id/editTextText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="303dp"
+        android:layout_height="55dp"
         android:ems="10"
         android:inputType="text"
         android:text="Welcome To Android Development"
-        tools:layout_editor_absoluteX="111dp"
-        tools:layout_editor_absoluteY="291dp" />
+        tools:layout_editor_absoluteX="67dp"
+        tools:layout_editor_absoluteY="235dp" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/buttonOne"
         style="@style/Widget.Material3.Button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="195dp"
+        android:layout_height="57dp"
         android:onClick="setDisable"
         android:text="Button"
-        tools:layout_editor_absoluteX="169dp"
-        tools:layout_editor_absoluteY="194dp" />
+        tools:layout_editor_absoluteX="126dp"
+        tools:layout_editor_absoluteY="404dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

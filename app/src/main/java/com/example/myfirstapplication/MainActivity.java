@@ -1,7 +1,10 @@
 package com.example.myfirstapplication;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
@@ -24,7 +27,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void setDisable(View v){
-        v.setEnabled(false);
-        System.out.println("SetDisabled method is working fine Joseph...");
+//        v.setEnabled(false);
+//        System.out.println("SetDisabled method is working fine Joseph...");
+//        Log.d("msg","Log.d is working fine Joseph...");
+//
+//        Button button = (Button) v;
+//        button.setText("Disabled");
+        View myView = findViewById(R.id.buttonOne);
+        myView.setEnabled(false);
+
+        Button button1=(Button) myView;
+        button1.setText("Button1disabled");
+        button1.setBackgroundColor(Color.parseColor("#1A1A1D"));
+        button1.setTextColor(Color.parseColor("#FAF6E3"));
     }
 }
