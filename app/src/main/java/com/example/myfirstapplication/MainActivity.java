@@ -1,5 +1,6 @@
 package com.example.myfirstapplication;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
@@ -51,5 +52,10 @@ public class MainActivity extends AppCompatActivity {
         Log.d("textMsg","Your message Joseph : "+input);
         ((TextView) findViewById(R.id.textTwo)).setText(input);
         Toast.makeText(this,"Your message : "+input,Toast.LENGTH_LONG).show();
+    }
+
+    public void launchSettings(View v){
+        Intent i = new Intent(this,settingsActivity.class);
+        startActivity(i);
     }
 }
