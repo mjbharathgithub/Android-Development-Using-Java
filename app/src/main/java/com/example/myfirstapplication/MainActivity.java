@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -49,5 +50,6 @@ public class MainActivity extends AppCompatActivity {
         //Note We can also use EditText class for more specific operations
         Log.d("textMsg","Your message Joseph : "+input);
         ((TextView) findViewById(R.id.textTwo)).setText(input);
+        Toast.makeText(this,"Your message : "+input,Toast.LENGTH_LONG).show();
     }
 }
